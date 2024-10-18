@@ -1,0 +1,11 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div data-hidden={hasNoMessage} class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert">
+        <span class="slds-assistive-text">{theme}</span>
+        <h2>
+            <lightning-formatted-rich-text value={message}></lightning-formatted-rich-text>
+        </h2>
+        <lightning-button-icon onclick={close} variant="bare" alternative-text="Close" icon-name="utility:close" aria-label="Close">
+        </lightning-button-icon>
+    </div>
+</template>

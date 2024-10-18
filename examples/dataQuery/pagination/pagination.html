@@ -1,0 +1,28 @@
+<template>
+
+    <div if:true={paginationData}>
+
+        <lightning-button disabled={isFirstPage} icon-name="utility:chevronleft" icon-position="left" label="First"
+            title="Go to first page" onclick={goToFirstPage}></lightning-button>
+
+        <span class="empty-space"></span>
+
+        <lightning-button-icon disabled={isFirstPage} variant="bare" icon-name="utility:chevronleft"
+            title="Go to previous page" onclick={previousPage}>
+        </lightning-button-icon>
+
+        <div class="pages-text">{currentPage} of {lastPage} pages</div>
+
+        <lightning-button-icon disabled={isLastPage} variant="bare" icon-name="utility:chevronright"
+            title="Go to next page" onclick={nextPage}>
+        </lightning-button-icon>
+ 
+        <span class="empty-space"></span>
+
+        <lightning-button disabled={isLastPage} label="Last" title="Go to last page"
+            icon-name="utility:chevronright" icon-position="right" onclick={goToLastPage}>
+        </lightning-button>
+
+    </div>
+
+</template>

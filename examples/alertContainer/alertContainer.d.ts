@@ -1,0 +1,1 @@
+type ThemeValues = 'info' | 'warning' | 'error' | 'success';

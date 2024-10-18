@@ -1,0 +1,24 @@
+:host div {
+    height: auto;
+    visibility: visible;
+    margin: 15px 0;
+    transition: all 0.5s;
+}
+
+:host div[data-hidden="true"] {
+    margin: 0;
+    height: 0;
+    padding:0;
+    visibility: hidden;
+}
+
+:host h2 {
+    margin-left: auto;
+}
+
+:host lightning-button-icon {
+    border-radius: var(--lwc-borderRadiusCircle, 50%);
+    margin-left: auto;
+    padding: 5px;
+    background-color: rgb(242, 242, 242);
+}

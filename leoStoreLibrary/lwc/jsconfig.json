@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "es2018",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "c/nanostores": [
+                "./nanostores/nanostores.js"
+            ],
+            "c/leoStore": [
+                "leoStore/leoStore.js"
+            ],
+            "@salesforce/*": [
+                ".sfdx/typings/*"
+            ],
+            "@types/*": [
+                "types/*"
+            ]
+        },
+        "typeRoots": [
+            "types"
+        ],
+        "checkJs": false
+    },
+    "include": [
+        "**/*",
+        "*.html",
+        "./**/*.d.ts",
+        "types/*.d.ts",
+        "types/**/*.d.ts",
+        "../../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
+        ]
+    }
+}
